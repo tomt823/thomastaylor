@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/34d2146f68.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1/dist/confetti.min.js"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/LogoNew.png" alt="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Data Analyst & Frontend Developer</p>
+            <h1>Hi, I'm <span>Thomas</span><br>Taylor from Leeds, England</h1>
+        </div>
+    </div>
+</div>
+
+<!-- About Section -->
+
+<div id="about">
+    <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/SecondPhotoSmallRessize.png" alt="SecondPhoto">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Thomas Taylor, a Data Analyst from Leeds, England. I have a passion for data, sports and gaming! I am currently studying a Masters in Computer Science at the University of York. I have experience in Python, SQL, R, HTML, CSS, React and MongoDB. I am currently looking for a Data Analyst or Frontend Developer role based in the UK or fully remote.</p>
+                
+                    <div class= "tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Data Analysis</span><br>Python<br>Pandas<br>Numpy<br>SQL<br>R<br></li>
+                        <li><span>Frontend Development</span><br>HTML<br>CSS<br>React<br>JavaScript</li>
+                    </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Post 16 Attendance Data Analyst</span><br>Allerton High School<br>July 2022 - Present</li>
+                            <li><span>Data Analyst</span><br>Gamlytics<br>April 2023 - October 2023</li>
+                        </ul>
+                    </div>
+
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>MSc Computer Science</span><br>University of York</li>
+                                <li><span>MSc Sport Business Management</span><br>Leeds Beckett University (Merit)<br>Graduated: 2021</li>
+                                <li><span>BA (Hons) Sports Marketing</span><br>St Mary's University, Twickenham (2:1)<br>Graduated: 2019</li>
+                            </ul> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Services Section ------->
+
+<div id="services">
+    <div class="container">
+    <h1 class="sub-title"> My Services</h1>
+        <div class="service-list">
+            <div>
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h2>Data Analysis</h2>
+                <p>Discover the story your data is eager to tell. My Data Analysis service turns complex datasets into clear insights that can inform your business decisions and give you a competitive edge. Ready for a data-driven transformation? Click to explore how we can illuminate your data's true potential.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h3>Frontend Development</h3>
+                <p>Craft a digital experience that captivates and converts. My Frontend Development service blends cutting-edge design with user-centric functionality, ensuring your website not only looks exceptional but also excels in performance. Curious to see the difference? Click to see how we can revamp your site's frontend.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h4>eSports Consultancy</h4>
+                <p>Navigate the esports ecosystem with confidence. My Esports Consultancy service offers expert insights and tailored strategies to help players, teams, and brands achieve their competitive and business goals. Ready to level up your game? Click to discover how we can unlock your potential in the esports world.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------Portfolio Section---------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="portfolio-list">
+            <div class="work">
+                <img src="Images/DataImage1.png" alt="Data Science Work">
+                <div class="layers">
+                <h3>Personal Energy Usage Linear Regression and Forecasting</h3>
+                <p>Employed Python, Pandas, and Statsmodels to perform Time Series Forecasting, uncovering trends in energy and gas usage data. Utilized SARIMA and SARIMAX models for accurate prediction of future consumption</p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/DataImage2.png" alt="University Education Machine Learning">
+                <div class="layers">
+                    <h3>University Machine Learning Project </h3>
+                    <p>Using Python, Numpy, and sklearn to conduct K-Means Clustering to uncover hidden trends in Global University Standards</p>
+                    <a href="https://www.kaggle.com/code/tomtaylor823/university-machine-learning"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/DataImage3.png" alt="Esports Project">
+                <div class="layers">
+                    <h3>Twitch Streaming Data Analysis Project</h3>
+                    <p>Using Python, Pandas, and Matplot Lib to provide interesting insights between streaming and games</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">View More</a>
+    </div>
+</div>
+
+<!-------Contact Section---------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i><br>thomastaylor823@gmail.com<br><br></p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/tomt823/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/tomt823/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/thomas-taylor-56852a119/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/tomt823"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://discord.com/users/tomt823"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                <a href="Images/TT-Resume-Web.pdf" download class="btn btn2">Download Resume</a>    
+            </div>
+            <div class="contact-right">
+                <form name= "submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>   
+        </div> 
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Thomas Taylor. Made 2023. All rights reserved.</p>
+    </div>    
+</div>
+
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-250px";
+    }
+
+    
+
+</script>
+
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz5Qo9SFKlBpxc5ANe5qd9QeHXeJRzQUnfY3DD8JdfANZHEsGritJtnKKmJo1dIqpdf/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
