@@ -4,29 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
+    <title>Thomas Taylor - Data Analyst & Frontend Developer</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/34d2146f68.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1/dist/confetti.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <div id="header">
     <div class="container">
         <nav>
-            <img src="Images/LogoNew.png" alt="logo">
+            <img src="Images/LogoNew.png" alt="logo" class="logo">
             <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#header" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p>Data Analyst & Frontend Developer</p>
-            <h1>Hi, I'm <span>Thomas</span><br>Taylor from Leeds, England</h1>
+            <p class="typing-text">Data Analyst & Frontend Developer</p>
+            <h1>Hi, I'm <span class="highlight">Thomas</span><br>Taylor from Leeds, England</h1>
+            <div class="cta-buttons">
+                <a href="#portfolio" class="btn primary-btn">View My Work</a>
+                <a href="#contact" class="btn secondary-btn">Get in Touch</a>
+            </div>
         </div>
     </div>
 </div>
@@ -78,25 +85,25 @@
 
 <div id="services">
     <div class="container">
-    <h1 class="sub-title"> My Services</h1>
+    <h1 class="sub-title">My Services</h1>
         <div class="service-list">
-            <div>
+            <div class="service-card">
                 <i class="fa-solid fa-magnifying-glass-chart"></i>
                 <h2>Data Analysis</h2>
-                <p>Discover the story your data is eager to tell. My Data Analysis service turns complex datasets into clear insights that can inform your business decisions and give you a competitive edge. Ready for a data-driven transformation? Click to explore how we can illuminate your data's true potential.</p>
-                <a href="#">Learn More</a>
+                <p>Discover the story your data is eager to tell. My Data Analysis service turns complex datasets into clear insights that can inform your business decisions and give you a competitive edge.</p>
+                <a href="#" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <div>
+            <div class="service-card">
                 <i class="fa-solid fa-code"></i>
                 <h3>Frontend Development</h3>
-                <p>Craft a digital experience that captivates and converts. My Frontend Development service blends cutting-edge design with user-centric functionality, ensuring your website not only looks exceptional but also excels in performance. Curious to see the difference? Click to see how we can revamp your site's frontend.</p>
-                <a href="#">Learn More</a>
+                <p>Craft a digital experience that captivates and converts. My Frontend Development service blends cutting-edge design with user-centric functionality.</p>
+                <a href="#" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <div>
+            <div class="service-card">
                 <i class="fa-solid fa-gamepad"></i>
                 <h4>eSports Consultancy</h4>
-                <p>Navigate the esports ecosystem with confidence. My Esports Consultancy service offers expert insights and tailored strategies to help players, teams, and brands achieve their competitive and business goals. Ready to level up your game? Click to discover how we can unlock your potential in the esports world.</p>
-                <a href="#">Learn More</a>
+                <p>Navigate the esports ecosystem with confidence. My Esports Consultancy service offers expert insights and tailored strategies to help players, teams, and brands achieve their goals.</p>
+                <a href="#" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
     </div>
@@ -143,28 +150,34 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i><br>thomastaylor823@gmail.com<br><br></p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/tomt823/"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/tomt823/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/thomas-taylor-56852a119/"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://github.com/tomt823"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://discord.com/users/tomt823"><i class="fa-brands fa-discord"></i></a>
-                    </div>
-                <a href="Images/TT-Resume-Web.pdf" download class="btn btn2">Download Resume</a>    
+                <p><i class="fa-solid fa-envelope"></i> thomastaylor823@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/tomt823/" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/tomt823/" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/thomas-taylor-56852a119/" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/tomt823" class="social-link"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://discord.com/users/tomt823" class="social-link"><i class="fa-brands fa-discord"></i></a>
+                </div>
+                <a href="Images/TT-Resume-Web.pdf" download class="btn btn2">Download Resume <i class="fa-solid fa-download"></i></a>    
             </div>
             <div class="contact-right">
-                <form name= "submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                <form name="submit-to-google-sheet" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn2">Send Message <i class="fa-solid fa-paper-plane"></i></button>
                 </form>
             </div>   
         </div> 
     </div>
     <div class="copyright">
-        <p>Copyright <i class="fa-regular fa-copyright"></i> Thomas Taylor. Made 2023. All rights reserved.</p>
+        <p>Copyright <i class="fa-regular fa-copyright"></i> 2024 Thomas Taylor. All rights reserved.</p>
     </div>    
 </div>
 
